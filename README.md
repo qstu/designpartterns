@@ -5,6 +5,7 @@
 
 类图如下：
 
+![avatar](https://github.com/qstu/designpartterns/blob/master/CommandClass.png)
 
 Receiver：命令最终的接受者，执行者；
 Command：命令接口；
