@@ -6,8 +6,6 @@
 ####      类图如下：
 
 ![command.png](./img/CommandClass.png)
-<center><font color=#aaaaaa size=3>Command.png</font></center>
----
 
 	Receiver：命令最终的接受者，执行者；
 	Command：命令接口；
