@@ -3,7 +3,7 @@
 ## 1.设计模式-命令模式Command
 命令模式是对用户输入的命令，进行拦截，批处理等一系列操作，目的是使用户与命令的直接操作对象分离。
 
-####类图如下：
+####      类图如下：
 
 ![command.png](./img/CommandClass.png)
 <center><font color=#aaaaaa size=3>Command.png</font></center>
