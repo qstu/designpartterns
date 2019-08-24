@@ -12,9 +12,9 @@
 	CommandA，CommandB：具体命令，需要持有Receiver的一个引用，从而执行具体命令对应的操作；
 	Invoker：命令控制器，调用者，对命令进行拦截批处理等操作。需要持有用户动态设置的命令，以便对这些命令进行处理；
 
-####代码
+#### 代码
 
-#####1.Receiver
+##### 1.Receiver
 
 	public class Receiver {
   
@@ -32,7 +32,7 @@
     		System.out.println("doingB!!!");
   		}
 	}
-#####2.Command
+##### 2.Command
 	public interface Command {
 
 		/**
@@ -40,7 +40,7 @@
 		*/
 		void action();
 	}
-#####3.CommandA
+##### 3.CommandA
 	public class CommandA implements Command {
 		  
 		private Receiver receiver;
@@ -58,7 +58,7 @@
 		
 	}
 
-#####4.CommandB
+##### 4.CommandB
 	public class CommandB implements Command {
 	  
 	  private Receiver receiver;
@@ -75,7 +75,7 @@
 	  }
 	
 	}
-#####5.Invoker
+##### 5.Invoker
 	public class Invoker {
 	  
 	  private List<Command> commands;
@@ -115,7 +115,7 @@
 	
 	}
 
-###测试代码：
+### 测试代码：
 	public class Client {
 	
 	  public static void main(String[] args) {
@@ -137,6 +137,6 @@
 	  }
 	
 	}
-###执行结果：
+### 执行结果：
 	doingA!!!
 	doingB!!!
